@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifreli Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #password-container {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #password {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #content {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-box {
+            display: block;
+            width: 80%;
+            height: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="password-container">
+        <h2>Siteye Giriş</h2>
+        <input type="password" id="password" placeholder="Şifrenizi girin">
+        <button onclick="checkPassword()">Giriş Yap</button>
+        <p id="error-message" style="display:none; color:red;">Yanlış şifre, lütfen tekrar deneyin!</p>
+    </div>
+
+    <div id="content" style="display:none;">
+        <h1>Hoş Geldiniz!</h1>
+        <p>İstediğiniz mesaj kutusunu eklemek için butona basın:</p>
+        <button onclick="addMessageBox()">Mesaj Kutusu Ekle</button>
+        <div id="message-boxes"></div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+            if (password === "334181") {
+                document.getElementById("password-container").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+
+        function addMessageBox() {
+            const messageBox = document.createElement("textarea");
+            messageBox.placeholder = "Mesajınızı buraya yazın...";
+            messageBox.className = "message-box";
+            document.getElementById("message-boxes").appendChild(messageBox);
+        }
+    </script>
+</body>
+</html>
