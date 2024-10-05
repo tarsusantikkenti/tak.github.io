@@ -1,146 +1,73 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleopatra Kapısı - Tarsus</title>
-    <!-- model-viewer kütüphanesini dahil etme -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kleopatra Kapısı 3D Modeli</title>
     <style>
-        /* Genel stil */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
         }
-
-        .container {
-            width: 85%;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #34495e;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .history {
-            margin: 20px 0;
-        }
-
-        /* Resim stil */
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
+        .sketchfab-embed-wrapper {
+            width: 80%;
             max-width: 800px;
-            margin: 20px auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Link stil */
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* 3D model görünümü için stil */
-        model-viewer {
+        iframe {
             width: 100%;
             height: 500px;
-            margin-top: 40px;
+            border: none;
+        }
+        p {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: #1CAAD9;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Kleopatra Kapısı - Tarsus</h1>
-</header>
+    <h1>Kleopatra Kapısı 3D Modeli</h1>
 
-<div class="container">
-    <h2>Tarihi</h2>
-    <div class="history">
-        <p>
-            Kleopatra Kapısı, Mersin'in Tarsus ilçesinde yer alan tarihi bir yapıdır. Antik dönemde, 
-            bu kapı Tarsus'un şehir surlarının bir parçasıydı ve önemli bir geçiş noktası olarak 
-            biliniyordu. Kapının adının Kleopatra ile anılmasının nedeni, MÖ 41 yılında Mısır 
-            Kraliçesi Kleopatra ile Romalı komutan Marcus Antonius'un Tarsus'ta buluşmasıdır.
-        </p>
+    <div class="sketchfab-embed-wrapper">
+        <iframe title="Kleopatra Kapısı" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share 
+        src="https://sketchfab.com/models/368e35bf0ce343e09de2fc294e99a66f/embed"> </iframe>
 
-        <!-- İlk Resim ve Link -->
-        <a href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Tarsus_Cleopatra_Gate.jpg" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Tarsus_Cleopatra_Gate.jpg" alt="Kleopatra Kapısı Resim 1">
-        </a>
-
-        <p>
-            Kapı, Roma dönemine ait olup, zamanla Osmanlı döneminde de restore edilmiştir. Günümüzde 
-            sadece bir kısmı ayakta kalmış olan bu yapı, Tarsus'un simgelerinden biridir.
-        </p>
-
-        <!-- İkinci Resim ve Link -->
-        <a href="https://upload.wikimedia.org/wikipedia/commons/0/08/Tarsus_Kleopatra_Kapisi.JPG" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Tarsus_Kleopatra_Kapisi.JPG" alt="Kleopatra Kapısı Resim 2">
-        </a>
-
-        <p>
-            Kleopatra'nın Tarsus ziyareti sırasında şehre bu kapıdan giriş yaptığı söylenir. Kapı, 
-            bölgenin ticaret yolları üzerindeki stratejik konumunu da vurgulamaktadır.
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+            <a href="https://sketchfab.com/3d-models/kleopatra-kaps-368e35bf0ce343e09de2fc294e99a66f?utm_medium=embed&utm_campaign=share-popup&utm_content=368e35bf0ce343e09de2fc294e99a66f" 
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+            Kleopatra Kapısı
+            </a> by 
+            <a href="https://sketchfab.com/123UTKU890?utm_medium=embed&utm_campaign=share-popup&utm_content=368e35bf0ce343e09de2fc294e99a66f" 
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> 123UTKU890 </a> on 
+            <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=368e35bf0ce343e09de2fc294e99a66f" 
+            target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
         </p>
     </div>
-
-    <!-- 3D Model Ekleme -->
-    <h2>Kleopatra Kapısı 3D Modeli</h2>
-    <model-viewer src="https://skfb.ly/przzU" 
-                  alt="Kleopatra Kapısı 3D Modeli" camera-controls auto-rotate ar>
-    </model-viewer>
-</div>
-
-<footer>
-    <p>&copy; 2024 Tarsus Tarihi</p>
-</footer>
 
 </body>
 </html>
